@@ -1,13 +1,310 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+h1, h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+
+}
+
+.btn{
+  color: #fff;
+  background: #7c5dfa;
+  padding: 7px 17px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+p{
+  color: #777;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+.header{
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  background-color: #7c5dfa;
+  border-radius: 0 0 0 50px;
+}
+
+.container{
+  max-width: 1140px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin: auto;
+}
+
+
+.header h1{
+  color: #fff;
+}
+
+
+
+
+.jobs_list{
+
+  padding: 30px;
+  margin-top: -30px;
+  background: #fff;
+  border-radius: 10px;
+
+
+}
+
+
+.search0{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search1, .search2{
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search1{
+  padding: 15px 25px;
+}
+
+.search2{
+padding: 10px 25px;
+}
+
+.search3 select{
+
+padding: 15px 25px;
+border: 1px solid #ddd;
+outline: none;
+border-radius: 5px;
+
+}
+
+.search1 input , .search2 input {
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+
+
+.search1 span i , .search2 span i{
+color: #7c5dfa;
+}
+
+
+.jobs1{
+
+margin-top: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.jobsitem{
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.jobsitem img{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.jobscontent h6{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+
+.jobscontent h1{
+  margin-bottom: 10px;
+}
+
+.jobscontent h1 a {
+  text-decoration: none;
+  color: black;
+}
+.location p{
+  
+  margin-top: 30px;
+}
+
+.location p span{
+  color: #7c5dfa;
+}
+
+
+
+.details1{
+  margin-top: -30px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.details2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details2 {
+  margin-bottom: 30px;
+}
+
+.details2 button {
+  padding: 7px 25px;
+
+  border-radius: 5px;
+  background: #7c5dfa3b;
+  border: none;
+}
+
+.details2 button a {
+  text-decoration: none;
+  color: #7c5dfa;
+  font-size: 0.9rem;
+}
+
+.about h6 {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.about__job h6 {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.about__job h1 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.about span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #7c5dfa;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.jobdesc {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.require h1 {
+  margin-bottom: 10px;
+}
+
+.responsibility h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.requirements p,
+.responsibility p {
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.requirement__item,
+.responsibility__item {
+  padding-left: 30px;
+}
+.requirement__item li,
+.responsibility__item li {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .jobsitem {
+    width: 300px;
+  }
+
+  .search0 {
+    row-gap: 1rem;
+  }
+  .search1,
+  .search1 select {
+    padding: 7px 20px;
+  }
+
+  .search2 {
+    padding: 5px 20px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    font-size: 0.7rem;
+  }
+}
+
+.search1 input,
+.search_2 input,
+.search3 select {
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .search2 {
+    display: none;
+  }
 }
